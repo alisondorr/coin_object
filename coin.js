@@ -29,9 +29,6 @@ let coin = {
         let imgTails = document.createElement('img')
         //attach image file to element
         imgTails.src = "./images/tails.jpg"
-
-        //attaching new image element to body from js
-
         //identify if its a head (state=0) send image to page
         //this.flip()
         if (this.state === 0) {
