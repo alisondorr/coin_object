@@ -7,17 +7,16 @@ let coin = {
         num = Math.round((Math.random()))
         this.state = num
         return (this.state)
-        console.log(this.state)
+        //console.log(this.state)
     },
     toString: function toString() {
         //* 2. Return the string "Heads" or "Tails", depending on whether "this.state" is 0 or 1. If this.state is zero it is a heads*/
-        //this.flip()
         if (this.state === 0) {
             return ("Heads")
         } else {
             return ("Tails")
         }
-        //console.log(this.toString)
+
     },
     toHTML: function toHTML() {
         /* 3. Set the properties of this image element to show either face-up or face-down, depending on whether this.state is 0 or 1. return an image*/
@@ -29,8 +28,8 @@ let coin = {
         let imgTails = document.createElement('img')
         //attach image file to element
         imgTails.src = "./images/tails.jpg"
-        //identify if its a head (state=0) send image to page
-        //this.flip()
+        //if state is 0 call head send image 
+
         if (this.state === 0) {
             return (imgHeads)
         } else {
